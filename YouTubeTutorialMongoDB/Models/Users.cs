@@ -10,5 +10,13 @@ namespace YouTubeTutorialMongoDB.Models
         public int UserId { get; set; }
         public string? firstname { get; set; }
         public string? lastname { get; set; }
+        public UserAddress? Address { get; set; }
+    }
+
+    public class UserAddress
+    {
+        public string? State { get; set; }
+        public string? City { get; set; }
+        public string? Address { get; set; }
     }
 }
